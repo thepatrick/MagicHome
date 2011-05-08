@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD3F7166137618B6002F9770 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3F7165137618B6002F9770 /* UIKit.framework */; };
+		CD3F7168137618B6002F9770 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3F7167137618B6002F9770 /* Foundation.framework */; };
+		CD3F716A137618B6002F9770 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3F7169137618B6002F9770 /* CoreGraphics.framework */; };
+		CD3F7170137618B6002F9770 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD3F716E137618B6002F9770 /* InfoPlist.strings */; };
+		CD3F7173137618B6002F9770 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F7172137618B6002F9770 /* main.m */; };
+		CD3F7176137618B6002F9770 /* MagicHomeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F7175137618B6002F9770 /* MagicHomeAppDelegate.m */; };
+		CD3F7179137618B6002F9770 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD3F7177137618B6002F9770 /* MainWindow.xib */; };
+		CD3F717C137618B6002F9770 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F717B137618B6002F9770 /* RootViewController.m */; };
+		CD3F717F137618B6002F9770 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD3F717D137618B6002F9770 /* RootViewController.xib */; };
+		CD3F7186137618B6002F9770 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3F7165137618B6002F9770 /* UIKit.framework */; };
+		CD3F7187137618B6002F9770 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3F7167137618B6002F9770 /* Foundation.framework */; };
+		CD3F7188137618B6002F9770 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3F7169137618B6002F9770 /* CoreGraphics.framework */; };
+		CD3F7190137618B6002F9770 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD3F718E137618B6002F9770 /* InfoPlist.strings */; };
+		CD3F7193137618B6002F9770 /* MagicHomeTests.h in Resources */ = {isa = PBXBuildFile; fileRef = CD3F7192137618B6002F9770 /* MagicHomeTests.h */; };
+		CD3F7195137618B6002F9770 /* MagicHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F7194137618B6002F9770 /* MagicHomeTests.m */; };
+		CD3F71A2137618F6002F9770 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3F719E137618F6002F9770 /* Default.png */; };
+		CD3F71A3137618F6002F9770 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3F719F137618F6002F9770 /* Default@2x.png */; };
+		CD3F71A4137618F6002F9770 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3F71A0137618F6002F9770 /* Icon.png */; };
+		CD3F71A5137618F6002F9770 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3F71A1137618F6002F9770 /* Icon@2x.png */; };
+		CD3F71AF13762316002F9770 /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71AE13762316002F9770 /* SwitchCell.m */; };
+		CD3F71B21376282D002F9770 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71B11376282D002F9770 /* JSONKit.m */; };
+		CD3F71B51376285F002F9770 /* DomusAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71B41376285F002F9770 /* DomusAPI.m */; };
+		CD3F721013762A41002F9770 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71B913762A41002F9770 /* ASIAuthenticationDialog.m */; };
+		CD3F721113762A41002F9770 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71BC13762A41002F9770 /* ASIDataCompressor.m */; };
+		CD3F721213762A41002F9770 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71BE13762A41002F9770 /* ASIDataDecompressor.m */; };
+		CD3F721313762A41002F9770 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71C013762A41002F9770 /* ASIDownloadCache.m */; };
+		CD3F721413762A41002F9770 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71C213762A41002F9770 /* ASIFormDataRequest.m */; };
+		CD3F721513762A41002F9770 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71C413762A41002F9770 /* ASIHTTPRequest.m */; };
+		CD3F721613762A41002F9770 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71C813762A41002F9770 /* ASIInputStream.m */; };
+		CD3F721713762A41002F9770 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71CA13762A41002F9770 /* ASINetworkQueue.m */; };
+		CD3F721813762A41002F9770 /* ASIWebPageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71CE13762A41002F9770 /* ASIWebPageRequest.m */; };
+		CD3F721913762A41002F9770 /* ASICloudFilesCDNRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71D113762A41002F9770 /* ASICloudFilesCDNRequest.m */; };
+		CD3F721A13762A41002F9770 /* ASICloudFilesContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71D313762A41002F9770 /* ASICloudFilesContainer.m */; };
+		CD3F721B13762A41002F9770 /* ASICloudFilesContainerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71D513762A41002F9770 /* ASICloudFilesContainerRequest.m */; };
+		CD3F721C13762A41002F9770 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71D713762A41002F9770 /* ASICloudFilesContainerXMLParserDelegate.m */; };
+		CD3F721D13762A41002F9770 /* ASICloudFilesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71D913762A41002F9770 /* ASICloudFilesObject.m */; };
+		CD3F721E13762A41002F9770 /* ASICloudFilesObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71DB13762A41002F9770 /* ASICloudFilesObjectRequest.m */; };
+		CD3F721F13762A41002F9770 /* ASICloudFilesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71DD13762A41002F9770 /* ASICloudFilesRequest.m */; };
+		CD3F722013762A41002F9770 /* ASIS3Bucket.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71E113762A41002F9770 /* ASIS3Bucket.m */; };
+		CD3F722113762A41002F9770 /* ASIS3BucketObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71E313762A41002F9770 /* ASIS3BucketObject.m */; };
+		CD3F722213762A41002F9770 /* ASIS3BucketRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71E513762A41002F9770 /* ASIS3BucketRequest.m */; };
+		CD3F722313762A41002F9770 /* ASIS3ObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71E713762A41002F9770 /* ASIS3ObjectRequest.m */; };
+		CD3F722413762A41002F9770 /* ASIS3Request.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71E913762A41002F9770 /* ASIS3Request.m */; };
+		CD3F722513762A41002F9770 /* ASIS3ServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F71EB13762A41002F9770 /* ASIS3ServiceRequest.m */; };
+		CD3F723613762A41002F9770 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F720F13762A41002F9770 /* Reachability.m */; };
+		CD3F724413762B6B002F9770 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3F724313762B6B002F9770 /* CFNetwork.framework */; };
+		CD3F724613762B78002F9770 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3F724513762B78002F9770 /* MobileCoreServices.framework */; };
+		CD3F724813762B7F002F9770 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3F724713762B7F002F9770 /* SystemConfiguration.framework */; };
+		CD3F724A13762B86002F9770 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3F724913762B86002F9770 /* libxml2.dylib */; };
+		CD3F724C13762B8D002F9770 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3F724B13762B8D002F9770 /* libz.dylib */; };
+		CD66EF9313764069004B00B4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CD66EF9213764069004B00B4 /* LICENSE */; };
+		CD66EF951376408E004B00B4 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = CD66EF941376408E004B00B4 /* README.markdown */; };
+		CD66EF9F1376466F004B00B4 /* backdrop.png in Resources */ = {isa = PBXBuildFile; fileRef = CD66EF9E1376466F004B00B4 /* backdrop.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD3F7189137618B6002F9770 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD3F7158137618B6002F9770 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD3F7160137618B6002F9770;
+			remoteInfo = MagicHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD3F7161137618B6002F9770 /* MagicHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD3F7165137618B6002F9770 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CD3F7167137618B6002F9770 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD3F7169137618B6002F9770 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CD3F716D137618B6002F9770 /* MagicHome-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MagicHome-Info.plist"; sourceTree = "<group>"; };
+		CD3F716F137618B6002F9770 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD3F7171137618B6002F9770 /* MagicHome-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicHome-Prefix.pch"; sourceTree = "<group>"; };
+		CD3F7172137618B6002F9770 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD3F7174137618B6002F9770 /* MagicHomeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagicHomeAppDelegate.h; sourceTree = "<group>"; };
+		CD3F7175137618B6002F9770 /* MagicHomeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicHomeAppDelegate.m; sourceTree = "<group>"; };
+		CD3F7178137618B6002F9770 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		CD3F717A137618B6002F9770 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		CD3F717B137618B6002F9770 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		CD3F717E137618B6002F9770 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		CD3F7185137618B6002F9770 /* MagicHomeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicHomeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD3F718D137618B6002F9770 /* MagicHomeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MagicHomeTests-Info.plist"; sourceTree = "<group>"; };
+		CD3F718F137618B6002F9770 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD3F7191137618B6002F9770 /* MagicHomeTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicHomeTests-Prefix.pch"; sourceTree = "<group>"; };
+		CD3F7192137618B6002F9770 /* MagicHomeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagicHomeTests.h; sourceTree = "<group>"; };
+		CD3F7194137618B6002F9770 /* MagicHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicHomeTests.m; sourceTree = "<group>"; };
+		CD3F719E137618F6002F9770 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CD3F719F137618F6002F9770 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CD3F71A0137618F6002F9770 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CD3F71A1137618F6002F9770 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		CD3F71AD13762316002F9770 /* SwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchCell.h; sourceTree = "<group>"; };
+		CD3F71AE13762316002F9770 /* SwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchCell.m; sourceTree = "<group>"; };
+		CD3F71B01376282D002F9770 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		CD3F71B11376282D002F9770 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		CD3F71B31376285F002F9770 /* DomusAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DomusAPI.h; sourceTree = "<group>"; };
+		CD3F71B41376285F002F9770 /* DomusAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DomusAPI.m; sourceTree = "<group>"; };
+		CD3F71B813762A41002F9770 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		CD3F71B913762A41002F9770 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		CD3F71BA13762A41002F9770 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		CD3F71BB13762A41002F9770 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		CD3F71BC13762A41002F9770 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		CD3F71BD13762A41002F9770 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		CD3F71BE13762A41002F9770 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		CD3F71BF13762A41002F9770 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		CD3F71C013762A41002F9770 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		CD3F71C113762A41002F9770 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		CD3F71C213762A41002F9770 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		CD3F71C313762A41002F9770 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		CD3F71C413762A41002F9770 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		CD3F71C513762A41002F9770 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		CD3F71C613762A41002F9770 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		CD3F71C713762A41002F9770 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		CD3F71C813762A41002F9770 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		CD3F71C913762A41002F9770 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		CD3F71CA13762A41002F9770 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		CD3F71CB13762A41002F9770 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		CD3F71CD13762A41002F9770 /* ASIWebPageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIWebPageRequest.h; sourceTree = "<group>"; };
+		CD3F71CE13762A41002F9770 /* ASIWebPageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIWebPageRequest.m; sourceTree = "<group>"; };
+		CD3F71D013762A41002F9770 /* ASICloudFilesCDNRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesCDNRequest.h; sourceTree = "<group>"; };
+		CD3F71D113762A41002F9770 /* ASICloudFilesCDNRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesCDNRequest.m; sourceTree = "<group>"; };
+		CD3F71D213762A41002F9770 /* ASICloudFilesContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesContainer.h; sourceTree = "<group>"; };
+		CD3F71D313762A41002F9770 /* ASICloudFilesContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesContainer.m; sourceTree = "<group>"; };
+		CD3F71D413762A41002F9770 /* ASICloudFilesContainerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesContainerRequest.h; sourceTree = "<group>"; };
+		CD3F71D513762A41002F9770 /* ASICloudFilesContainerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesContainerRequest.m; sourceTree = "<group>"; };
+		CD3F71D613762A41002F9770 /* ASICloudFilesContainerXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesContainerXMLParserDelegate.h; sourceTree = "<group>"; };
+		CD3F71D713762A41002F9770 /* ASICloudFilesContainerXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesContainerXMLParserDelegate.m; sourceTree = "<group>"; };
+		CD3F71D813762A41002F9770 /* ASICloudFilesObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesObject.h; sourceTree = "<group>"; };
+		CD3F71D913762A41002F9770 /* ASICloudFilesObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesObject.m; sourceTree = "<group>"; };
+		CD3F71DA13762A41002F9770 /* ASICloudFilesObjectRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesObjectRequest.h; sourceTree = "<group>"; };
+		CD3F71DB13762A41002F9770 /* ASICloudFilesObjectRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesObjectRequest.m; sourceTree = "<group>"; };
+		CD3F71DC13762A41002F9770 /* ASICloudFilesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesRequest.h; sourceTree = "<group>"; };
+		CD3F71DD13762A41002F9770 /* ASICloudFilesRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesRequest.m; sourceTree = "<group>"; };
+		CD3F71DF13762A41002F9770 /* ASINSXMLParserCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINSXMLParserCompat.h; sourceTree = "<group>"; };
+		CD3F71E013762A41002F9770 /* ASIS3Bucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3Bucket.h; sourceTree = "<group>"; };
+		CD3F71E113762A41002F9770 /* ASIS3Bucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3Bucket.m; sourceTree = "<group>"; };
+		CD3F71E213762A41002F9770 /* ASIS3BucketObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3BucketObject.h; sourceTree = "<group>"; };
+		CD3F71E313762A41002F9770 /* ASIS3BucketObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3BucketObject.m; sourceTree = "<group>"; };
+		CD3F71E413762A41002F9770 /* ASIS3BucketRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3BucketRequest.h; sourceTree = "<group>"; };
+		CD3F71E513762A41002F9770 /* ASIS3BucketRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3BucketRequest.m; sourceTree = "<group>"; };
+		CD3F71E613762A41002F9770 /* ASIS3ObjectRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3ObjectRequest.h; sourceTree = "<group>"; };
+		CD3F71E713762A41002F9770 /* ASIS3ObjectRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3ObjectRequest.m; sourceTree = "<group>"; };
+		CD3F71E813762A41002F9770 /* ASIS3Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3Request.h; sourceTree = "<group>"; };
+		CD3F71E913762A41002F9770 /* ASIS3Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3Request.m; sourceTree = "<group>"; };
+		CD3F71EA13762A41002F9770 /* ASIS3ServiceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3ServiceRequest.h; sourceTree = "<group>"; };
+		CD3F71EB13762A41002F9770 /* ASIS3ServiceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3ServiceRequest.m; sourceTree = "<group>"; };
+		CD3F720E13762A41002F9770 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CD3F720F13762A41002F9770 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CD3F724313762B6B002F9770 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CD3F724513762B78002F9770 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CD3F724713762B7F002F9770 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CD3F724913762B86002F9770 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		CD3F724B13762B8D002F9770 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CD66EF9213764069004B00B4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CD66EF941376408E004B00B4 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		CD66EF9E1376466F004B00B4 /* backdrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backdrop.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD3F715E137618B6002F9770 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3F724413762B6B002F9770 /* CFNetwork.framework in Frameworks */,
+				CD3F716A137618B6002F9770 /* CoreGraphics.framework in Frameworks */,
+				CD3F7168137618B6002F9770 /* Foundation.framework in Frameworks */,
+				CD3F724613762B78002F9770 /* MobileCoreServices.framework in Frameworks */,
+				CD3F724813762B7F002F9770 /* SystemConfiguration.framework in Frameworks */,
+				CD3F7166137618B6002F9770 /* UIKit.framework in Frameworks */,
+				CD3F724A13762B86002F9770 /* libxml2.dylib in Frameworks */,
+				CD3F724C13762B8D002F9770 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3F7181137618B6002F9770 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3F7186137618B6002F9770 /* UIKit.framework in Frameworks */,
+				CD3F7187137618B6002F9770 /* Foundation.framework in Frameworks */,
+				CD3F7188137618B6002F9770 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD3F7156137618B6002F9770 = {
+			isa = PBXGroup;
+			children = (
+				CD3F716B137618B6002F9770 /* MagicHome */,
+				CD3F718B137618B6002F9770 /* MagicHomeTests */,
+				CD3F7164137618B6002F9770 /* Frameworks */,
+				CD3F7162137618B6002F9770 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD3F7162137618B6002F9770 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD3F7161137618B6002F9770 /* MagicHome.app */,
+				CD3F7185137618B6002F9770 /* MagicHomeTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD3F7164137618B6002F9770 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD3F724B13762B8D002F9770 /* libz.dylib */,
+				CD3F724913762B86002F9770 /* libxml2.dylib */,
+				CD3F724713762B7F002F9770 /* SystemConfiguration.framework */,
+				CD3F724513762B78002F9770 /* MobileCoreServices.framework */,
+				CD3F724313762B6B002F9770 /* CFNetwork.framework */,
+				CD3F7165137618B6002F9770 /* UIKit.framework */,
+				CD3F7167137618B6002F9770 /* Foundation.framework */,
+				CD3F7169137618B6002F9770 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD3F716B137618B6002F9770 /* MagicHome */ = {
+			isa = PBXGroup;
+			children = (
+				CD3F71B613762A41002F9770 /* ASIHTTP */,
+				CD3F71B01376282D002F9770 /* JSONKit.h */,
+				CD3F71B11376282D002F9770 /* JSONKit.m */,
+				CD3F71AC137622FA002F9770 /* Cells */,
+				CD3F7174137618B6002F9770 /* MagicHomeAppDelegate.h */,
+				CD3F7175137618B6002F9770 /* MagicHomeAppDelegate.m */,
+				CD3F7177137618B6002F9770 /* MainWindow.xib */,
+				CD3F717A137618B6002F9770 /* RootViewController.h */,
+				CD3F717B137618B6002F9770 /* RootViewController.m */,
+				CD3F717D137618B6002F9770 /* RootViewController.xib */,
+				CD3F71B31376285F002F9770 /* DomusAPI.h */,
+				CD3F71B41376285F002F9770 /* DomusAPI.m */,
+				CD3F716C137618B6002F9770 /* Supporting Files */,
+				CD66EF941376408E004B00B4 /* README.markdown */,
+			);
+			path = MagicHome;
+			sourceTree = "<group>";
+		};
+		CD3F716C137618B6002F9770 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD66EF9E1376466F004B00B4 /* backdrop.png */,
+				CD3F719E137618F6002F9770 /* Default.png */,
+				CD3F719F137618F6002F9770 /* Default@2x.png */,
+				CD3F71A0137618F6002F9770 /* Icon.png */,
+				CD3F71A1137618F6002F9770 /* Icon@2x.png */,
+				CD3F716D137618B6002F9770 /* MagicHome-Info.plist */,
+				CD3F716E137618B6002F9770 /* InfoPlist.strings */,
+				CD3F7171137618B6002F9770 /* MagicHome-Prefix.pch */,
+				CD3F7172137618B6002F9770 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD3F718B137618B6002F9770 /* MagicHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD3F7192137618B6002F9770 /* MagicHomeTests.h */,
+				CD3F7194137618B6002F9770 /* MagicHomeTests.m */,
+				CD3F718C137618B6002F9770 /* Supporting Files */,
+			);
+			path = MagicHomeTests;
+			sourceTree = "<group>";
+		};
+		CD3F718C137618B6002F9770 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD3F718D137618B6002F9770 /* MagicHomeTests-Info.plist */,
+				CD3F718E137618B6002F9770 /* InfoPlist.strings */,
+				CD3F7191137618B6002F9770 /* MagicHomeTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD3F71AC137622FA002F9770 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CD3F71AD13762316002F9770 /* SwitchCell.h */,
+				CD3F71AE13762316002F9770 /* SwitchCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CD3F71B613762A41002F9770 /* ASIHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				CD66EF9213764069004B00B4 /* LICENSE */,
+				CD3F71B713762A41002F9770 /* Classes */,
+				CD3F720A13762A41002F9770 /* External */,
+			);
+			path = ASIHTTP;
+			sourceTree = "<group>";
+		};
+		CD3F71B713762A41002F9770 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CD3F71B813762A41002F9770 /* ASIAuthenticationDialog.h */,
+				CD3F71B913762A41002F9770 /* ASIAuthenticationDialog.m */,
+				CD3F71BA13762A41002F9770 /* ASICacheDelegate.h */,
+				CD3F71BB13762A41002F9770 /* ASIDataCompressor.h */,
+				CD3F71BC13762A41002F9770 /* ASIDataCompressor.m */,
+				CD3F71BD13762A41002F9770 /* ASIDataDecompressor.h */,
+				CD3F71BE13762A41002F9770 /* ASIDataDecompressor.m */,
+				CD3F71BF13762A41002F9770 /* ASIDownloadCache.h */,
+				CD3F71C013762A41002F9770 /* ASIDownloadCache.m */,
+				CD3F71C113762A41002F9770 /* ASIFormDataRequest.h */,
+				CD3F71C213762A41002F9770 /* ASIFormDataRequest.m */,
+				CD3F71C313762A41002F9770 /* ASIHTTPRequest.h */,
+				CD3F71C413762A41002F9770 /* ASIHTTPRequest.m */,
+				CD3F71C513762A41002F9770 /* ASIHTTPRequestConfig.h */,
+				CD3F71C613762A41002F9770 /* ASIHTTPRequestDelegate.h */,
+				CD3F71C713762A41002F9770 /* ASIInputStream.h */,
+				CD3F71C813762A41002F9770 /* ASIInputStream.m */,
+				CD3F71C913762A41002F9770 /* ASINetworkQueue.h */,
+				CD3F71CA13762A41002F9770 /* ASINetworkQueue.m */,
+				CD3F71CB13762A41002F9770 /* ASIProgressDelegate.h */,
+				CD3F71CC13762A41002F9770 /* ASIWebPageRequest */,
+				CD3F71CF13762A41002F9770 /* CloudFiles */,
+				CD3F71DE13762A41002F9770 /* S3 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CD3F71CC13762A41002F9770 /* ASIWebPageRequest */ = {
+			isa = PBXGroup;
+			children = (
+				CD3F71CD13762A41002F9770 /* ASIWebPageRequest.h */,
+				CD3F71CE13762A41002F9770 /* ASIWebPageRequest.m */,
+			);
+			path = ASIWebPageRequest;
+			sourceTree = "<group>";
+		};
+		CD3F71CF13762A41002F9770 /* CloudFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CD3F71D013762A41002F9770 /* ASICloudFilesCDNRequest.h */,
+				CD3F71D113762A41002F9770 /* ASICloudFilesCDNRequest.m */,
+				CD3F71D213762A41002F9770 /* ASICloudFilesContainer.h */,
+				CD3F71D313762A41002F9770 /* ASICloudFilesContainer.m */,
+				CD3F71D413762A41002F9770 /* ASICloudFilesContainerRequest.h */,
+				CD3F71D513762A41002F9770 /* ASICloudFilesContainerRequest.m */,
+				CD3F71D613762A41002F9770 /* ASICloudFilesContainerXMLParserDelegate.h */,
+				CD3F71D713762A41002F9770 /* ASICloudFilesContainerXMLParserDelegate.m */,
+				CD3F71D813762A41002F9770 /* ASICloudFilesObject.h */,
+				CD3F71D913762A41002F9770 /* ASICloudFilesObject.m */,
+				CD3F71DA13762A41002F9770 /* ASICloudFilesObjectRequest.h */,
+				CD3F71DB13762A41002F9770 /* ASICloudFilesObjectRequest.m */,
+				CD3F71DC13762A41002F9770 /* ASICloudFilesRequest.h */,
+				CD3F71DD13762A41002F9770 /* ASICloudFilesRequest.m */,
+			);
+			path = CloudFiles;
+			sourceTree = "<group>";
+		};
+		CD3F71DE13762A41002F9770 /* S3 */ = {
+			isa = PBXGroup;
+			children = (
+				CD3F71DF13762A41002F9770 /* ASINSXMLParserCompat.h */,
+				CD3F71E013762A41002F9770 /* ASIS3Bucket.h */,
+				CD3F71E113762A41002F9770 /* ASIS3Bucket.m */,
+				CD3F71E213762A41002F9770 /* ASIS3BucketObject.h */,
+				CD3F71E313762A41002F9770 /* ASIS3BucketObject.m */,
+				CD3F71E413762A41002F9770 /* ASIS3BucketRequest.h */,
+				CD3F71E513762A41002F9770 /* ASIS3BucketRequest.m */,
+				CD3F71E613762A41002F9770 /* ASIS3ObjectRequest.h */,
+				CD3F71E713762A41002F9770 /* ASIS3ObjectRequest.m */,
+				CD3F71E813762A41002F9770 /* ASIS3Request.h */,
+				CD3F71E913762A41002F9770 /* ASIS3Request.m */,
+				CD3F71EA13762A41002F9770 /* ASIS3ServiceRequest.h */,
+				CD3F71EB13762A41002F9770 /* ASIS3ServiceRequest.m */,
+			);
+			path = S3;
+			sourceTree = "<group>";
+		};
+		CD3F720A13762A41002F9770 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				CD3F720D13762A41002F9770 /* Reachability */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		CD3F720D13762A41002F9770 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				CD3F720E13762A41002F9770 /* Reachability.h */,
+				CD3F720F13762A41002F9770 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD3F7160137618B6002F9770 /* MagicHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD3F7198137618B6002F9770 /* Build configuration list for PBXNativeTarget "MagicHome" */;
+			buildPhases = (
+				CD3F715D137618B6002F9770 /* Sources */,
+				CD3F715E137618B6002F9770 /* Frameworks */,
+				CD3F715F137618B6002F9770 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicHome;
+			productName = MagicHome;
+			productReference = CD3F7161137618B6002F9770 /* MagicHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD3F7184137618B6002F9770 /* MagicHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD3F719B137618B6002F9770 /* Build configuration list for PBXNativeTarget "MagicHomeTests" */;
+			buildPhases = (
+				CD3F7180137618B6002F9770 /* Sources */,
+				CD3F7181137618B6002F9770 /* Frameworks */,
+				CD3F7182137618B6002F9770 /* Resources */,
+				CD3F7183137618B6002F9770 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD3F718A137618B6002F9770 /* PBXTargetDependency */,
+			);
+			name = MagicHomeTests;
+			productName = MagicHomeTests;
+			productReference = CD3F7185137618B6002F9770 /* MagicHomeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD3F7158137618B6002F9770 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CD3F715B137618B6002F9770 /* Build configuration list for PBXProject "MagicHome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD3F7156137618B6002F9770;
+			productRefGroup = CD3F7162137618B6002F9770 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD3F7160137618B6002F9770 /* MagicHome */,
+				CD3F7184137618B6002F9770 /* MagicHomeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD3F715F137618B6002F9770 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3F7170137618B6002F9770 /* InfoPlist.strings in Resources */,
+				CD3F7179137618B6002F9770 /* MainWindow.xib in Resources */,
+				CD3F717F137618B6002F9770 /* RootViewController.xib in Resources */,
+				CD3F71A2137618F6002F9770 /* Default.png in Resources */,
+				CD3F71A3137618F6002F9770 /* Default@2x.png in Resources */,
+				CD3F71A4137618F6002F9770 /* Icon.png in Resources */,
+				CD3F71A5137618F6002F9770 /* Icon@2x.png in Resources */,
+				CD66EF9313764069004B00B4 /* LICENSE in Resources */,
+				CD66EF951376408E004B00B4 /* README.markdown in Resources */,
+				CD66EF9F1376466F004B00B4 /* backdrop.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3F7182137618B6002F9770 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3F7190137618B6002F9770 /* InfoPlist.strings in Resources */,
+				CD3F7193137618B6002F9770 /* MagicHomeTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD3F7183137618B6002F9770 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD3F715D137618B6002F9770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3F7173137618B6002F9770 /* main.m in Sources */,
+				CD3F7176137618B6002F9770 /* MagicHomeAppDelegate.m in Sources */,
+				CD3F717C137618B6002F9770 /* RootViewController.m in Sources */,
+				CD3F71AF13762316002F9770 /* SwitchCell.m in Sources */,
+				CD3F71B21376282D002F9770 /* JSONKit.m in Sources */,
+				CD3F71B51376285F002F9770 /* DomusAPI.m in Sources */,
+				CD3F721013762A41002F9770 /* ASIAuthenticationDialog.m in Sources */,
+				CD3F721113762A41002F9770 /* ASIDataCompressor.m in Sources */,
+				CD3F721213762A41002F9770 /* ASIDataDecompressor.m in Sources */,
+				CD3F721313762A41002F9770 /* ASIDownloadCache.m in Sources */,
+				CD3F721413762A41002F9770 /* ASIFormDataRequest.m in Sources */,
+				CD3F721513762A41002F9770 /* ASIHTTPRequest.m in Sources */,
+				CD3F721613762A41002F9770 /* ASIInputStream.m in Sources */,
+				CD3F721713762A41002F9770 /* ASINetworkQueue.m in Sources */,
+				CD3F721813762A41002F9770 /* ASIWebPageRequest.m in Sources */,
+				CD3F721913762A41002F9770 /* ASICloudFilesCDNRequest.m in Sources */,
+				CD3F721A13762A41002F9770 /* ASICloudFilesContainer.m in Sources */,
+				CD3F721B13762A41002F9770 /* ASICloudFilesContainerRequest.m in Sources */,
+				CD3F721C13762A41002F9770 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
+				CD3F721D13762A41002F9770 /* ASICloudFilesObject.m in Sources */,
+				CD3F721E13762A41002F9770 /* ASICloudFilesObjectRequest.m in Sources */,
+				CD3F721F13762A41002F9770 /* ASICloudFilesRequest.m in Sources */,
+				CD3F722013762A41002F9770 /* ASIS3Bucket.m in Sources */,
+				CD3F722113762A41002F9770 /* ASIS3BucketObject.m in Sources */,
+				CD3F722213762A41002F9770 /* ASIS3BucketRequest.m in Sources */,
+				CD3F722313762A41002F9770 /* ASIS3ObjectRequest.m in Sources */,
+				CD3F722413762A41002F9770 /* ASIS3Request.m in Sources */,
+				CD3F722513762A41002F9770 /* ASIS3ServiceRequest.m in Sources */,
+				CD3F723613762A41002F9770 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3F7180137618B6002F9770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3F7195137618B6002F9770 /* MagicHomeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD3F718A137618B6002F9770 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD3F7160137618B6002F9770 /* MagicHome */;
+			targetProxy = CD3F7189137618B6002F9770 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD3F716E137618B6002F9770 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD3F716F137618B6002F9770 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CD3F7177137618B6002F9770 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD3F7178137618B6002F9770 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		CD3F717D137618B6002F9770 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD3F717E137618B6002F9770 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		CD3F718E137618B6002F9770 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD3F718F137618B6002F9770 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD3F7196137618B6002F9770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD3F7197137618B6002F9770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		CD3F7199137618B6002F9770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicHome/MagicHome-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
+				INFOPLIST_FILE = "MagicHome/MagicHome-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CD3F719A137618B6002F9770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicHome/MagicHome-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
+				INFOPLIST_FILE = "MagicHome/MagicHome-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CD3F719C137618B6002F9770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MagicHome.app/MagicHome";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicHomeTests/MagicHomeTests-Prefix.pch";
+				INFOPLIST_FILE = "MagicHomeTests/MagicHomeTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CD3F719D137618B6002F9770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MagicHome.app/MagicHome";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicHomeTests/MagicHomeTests-Prefix.pch";
+				INFOPLIST_FILE = "MagicHomeTests/MagicHomeTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD3F715B137618B6002F9770 /* Build configuration list for PBXProject "MagicHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD3F7196137618B6002F9770 /* Debug */,
+				CD3F7197137618B6002F9770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD3F7198137618B6002F9770 /* Build configuration list for PBXNativeTarget "MagicHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD3F7199137618B6002F9770 /* Debug */,
+				CD3F719A137618B6002F9770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD3F719B137618B6002F9770 /* Build configuration list for PBXNativeTarget "MagicHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD3F719C137618B6002F9770 /* Debug */,
+				CD3F719D137618B6002F9770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD3F7158137618B6002F9770 /* Project object */;
+}
